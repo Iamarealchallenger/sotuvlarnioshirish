@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Oswald', sans-serif;
+            color: #000000;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        h2 {
+            font-family: 'Oswald', sans-serif;
+            color: #333333;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        p {
+            font-family: 'Montserrat', sans-serif;
+            color: #555555;
+            font-weight: normal;
+            font-size: 16px;
+        }
+        .dark-green {
+            color: #006400;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .highlight-yellow {
+            background-color: #FFFF00;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #28A745;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #218838;
+        }
+        /* Стили для модального окна */
+        .modal {
+            display: none; /* Скрыто по умолчанию */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 90%;
+            max-width: 500px; /* Ограничим ширину */
+            height: 80%; /* Высота формы */
+            position: relative;
+        }
+        .modal-content iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram va Facebook yordamida sotuvlaringizni <span class="dark-green">50% oshirish</span> sirini mutlaq <span class="dark-green">BEPUL</span> bilib oling!</h1>
+        <h2 class="bold">Natija 1-2 oy ichida ko’rinadi, qaysi yo’nalishda ekanligingizning esa deyarli ahamiyati yo’q</h2>
+        <p class="bold highlight-yellow">Maqolani o’qishingiz bilanoq, men bergan ma’lumotlarni amalda qo’llashingiz mumkin bo’ladi…</p>
+
+        <p>Qulayroq o’rnashib olishni tavsiya qilaman, chunki…</p>
+        <p>Keyingi 10 daqiqada olgan informatsiyalaringiz, sotuvlarni rostakamiga oshirishga yordam beradi.</p>
+        <p>Lekin, qimmatli ma’lumotlardan oldin, men kim ekanligim va nimaga menga ishonish kerakligini aytib oʻtish kerak menimcha…</p>
+        <p>Ismim Ne’mat (o’rtada tutuq belgisi borligi sabab, Ne… mat deb o’qiladi).</p>
+        <p>Marketologman va bizneslarga <span class="bold">ijtimoiy tarmoqlar</span> orqali sotuvlarni oshirishga yordam beraman.</p>
+        <p>Marketingga kirib kelganimga 3 yil bo’lgan bo’lsa, o’tgan yilda ishlagan marketing agentligimda:</p>
+        <p>(Toshkentda) proyektlar uchun bir necha yuz $ dan, minglab $ gacha sotuvlar qilishga yordam berdik.</p>
+        <p>Reklamani o’ziga bir oyda <span class="bold">10 000 $</span> gacha ishlatgan loyihalarimiz bo’ldi.</p>
+        <p>Va bularning barchasi, hozir men sizga aytib beradigan formula tufayli…</p>
+
+        <h1>“Buyuk narsalar oddiy bo’ladi” Steve Jobs</h1>
+        <p>Lekin, bizni vaziyatimizda hammasi sal boshqacharoq.</p>
+        <p>Ko’p tadbirkorlar, SMM’chi olib, yokida o’zim Instagramga video/reels chiqarsam, hammasi yaxshi bo’lib ketadi, sotuvlarim oshadi deb o’ylaydi.</p>
+        <p>Lekin, taxmin qilingchi, yana kim shunaqa o’ylaydi va shunaqa qiladi? Spoyler qilaman: <span class="bold">HAMMA</span></p>
+        <p>Tan olish kerak, o’zim ham 2-3 yil oldin, xuddi shunaqa qilardim.</p>
+        <p>Lekin 2022-yilda, bu usul rostdan ham ishlardi. Chunki, Instagram qadrini biladigan tadbirkorlar kam edi.</p>
+        <p>Lekin, hozir emas. Hozir mijozingiz reklama reels’ingizni ko’rguncha, raqobatchilaringizni xuddi shunaqa videolaridan 10 tasini ko’rgan bo’ladi.</p>
+        <p>Shuning uchun siz aqlliroq bo’lishingiz, boshqacha o’ylashingiz kerak…</p>
+
+        <h1>Qiyin zamonlar, kuchli insonlarni yaratadi</h1>
+        <p>Xo’sh, muammo borligini bildik, yechimchi?</p>
+        <p>Reklamangizni ko’rishni xohlamasliklari, unga ishonmasliklariga, yechimlar aslida juda ko’p.</p>
+        <p>Lekin, menimcha ular ichidan eng ideali bu <span class="bold">marketing funnel’lardir.</span></p>
+        <p>Samarali funnel (o’zbekchasiga voronka) yordamida <span class="bold">mutlaq begona insonni ham qisqa muddatda mijozga aylantirish mumkin.</span></p>
+        <p>Ushbu metodologiyadan, nafaqat o’zimizda balki Rossiya, Yevropa va AQSH’da ham foydalanishadi.</p>
+        <p>Masalan, funnel’lar otasi sifatida ko’riladigan, bu sohada deyarli hammani, xususan o’zimni ham ustozim bo’lgan:</p>
+        <p>Russel Brunson, yiliga <span class="bold">100 mln $ +</span> aylanmani aynan funnel hisobiga qiladi.</p>
+        <p>Marketing voronkalar bunchalik yaxshi ishlashiga sabab:</p>
+        <p>siz voronkada begona odamga darhol mahsulotni sotib olishni taklif qilmaysiz.</p>
+        <p>Chunki, bu xuddi - <span class="bold">ko’chada birinchi marta ko’rib qolgan qizga turmush qurish taklifini berishga o’xshaydi.</span></p>
+        <p>Bunaqa qilsangiz, sizga chiroyli qilib, rad javobini qilishsa ham, xursand bo’lavering.</p>
+        <p>Voronkada esa, avval mijozga qiymat berasiz, so’ng nimaga siz eng yaxshi variant ekanligingizni ochib berasiz.</p>
+        <p>So’ng e’tirozlarni bartaraf qilasiz.</p>
+
+        <h1>Sizga to’liq ishongandan so’nggina mahsulotni taklif qilasiz..</h1>
+        <p>va bu vaziyatda siz konkurensiyadan bir bosh yuqorida bo’lasiz.</p>
+        <p>Masalan, deylik: siz dasturlashdan kurs sotasiz.</p>
+        <p><span class="bold">Bu ko’pchilikni reklama videosi:</span></p>
+        <p>Dasturlashdan yangi guruhlarimizga qabul ochildi.</p>
+        <p>Joylar soni cheklangan, ustozimizni tajribasi 3 yil, darslar vaqti 9:00 da.</p>
+        <p>Yozilish uchun hoziroq biz bilan bog’laning.</p>
+        <p>Sizni ham ozgina ko’nglingiz behuzur bo’ldimi 😅</p>
+        <p>Lekin, eng qizig’i 90 % ga yaqin bizneslarni ijtimoiy tarmoqlardagi reklamasi xuddi shunaqa.</p>
+        <p><span class="bold">Voronkada reklama qanaqa yoziladi:</span></p>
+        <p><span class="bold">Instagram videosi:</span> Dasturlashga qiziqasiz, lekin qaysi yo’nalish sizga to’g’ri kelayotganini bilmayapsizmi?</p>
+        <p>Bir vaqtni o’zida har bir yo’nalish qiziqdek tuyulyapti, lekin xato qaror qilishdan qo’rqyapsizmi?</p>
+        <p>Unda, 4 yillik tajribaga ega dasturchimiz Falonchijonning 15-martdagi bepul oflayn darsida qatnashing.</p>
+        <p>Darsda dasturlash yo’nalishlari va qaysi yo’nalish sizga mos kelishini aniq bilib olasiz.</p>
+        <p>Qatnashish uchun hoziroq pastdagi knopkaga bosing va telegram kanalimizga ulaning.</p>
+        <p><span class="bold">Soʻng, darsgacha, Telegramda:</span> taxminan 1 haftacha ustoz haqida batafsil ma’lumot berilardi, o’quvchilar natijalari olib chiqilardi, dasturlashni afzalliklari ochib berilardi.</p>
+        <p><span class="bold">Darsda:</span> O’quvchilar qiziqqan go’shtli ma’lumotlar berilib, ustozga va o’quv markazga to’liq ishonch paydo qilardim.</p>
+        <p><span class="bold">Dars oxirida:</span> kurs taqdimoti qilinardi, va sinab ko’rish uchun 1 hafta bepul o’qish mumkinligi aytilardi.</p>
+        <p><span class="bold">1 haftadan so’ng</span> esa sotuv yopilardi.</p>
+        <p>Jarayon qanaqa silliq ketganini his qildingizmi?</p>
+
+        <h1>Oʻzi begona odamga mahsulot sota olasligingizga asosiy sabab 2 ta -</h1>
+        <p>U sizga ishonmaydi.</p>
+        <p>Ishontirish uchun ma’lumotlaringizni eshitishni xohlamaydi va bunga vaqti yo’q.</p>
+        <p class="bold highlight-yellow">Voronka esa bu muammolarning ikkovini ham hal qiladi!</p>
+        <p>Aytgancha, tepadagi voronka biz yaqinda ishlatgan voronkaning deyarli o’zginasi. Ushbu o’quv markaz yaqinda 8-filialini ochdi :)</p>
+        <p>Marketing voronkasini nafaqat ta’lim, balki deyarli barcha, mijozga mahsulot yoki xizmat sotadigan bizneslarda ishlatsa bo’ladi.</p>
+        <p class="highlight-yellow">Agar shu yergacha o’qigan bo’lsangiz siz uchun muhim xushxabar:</p>
+        <p>Hozirda AdFix marketing agentligida marketing voronkasini tuzib berish mutlaqo <span class="highlight-yellow">bepul!</span></p>
+        <p>Uni amalda qo’llash uchun o’zimiz bilan hamkorlik qilishingiz, yokida…</p>
+        <p>Agar o’zingiz amalga oshirishni xohlasangiz, qanday realizatsiya qilishni o’rgatish ham mutlaq <span class="highlight-yellow">BEPUL!</span></p>
+        <p>Buning uchun hoziroq pastdagi knopkaga bosib, ma’lumotlaringizni qoldirsangiz bas:</p>
+        <button class="button" onclick="openModal()">Ma’lumotlarni qoldirish</button>
+    </div>
+
+    <!-- Модальное окно с Google Form -->
+    <div id="leadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScZ5H6ASbKLAXPNNNbdUmbOmATTAeDdHqB3HBlsFYzd3Ai35w/viewform?embedded=true" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // Функция для открытия модального окна
+        function openModal() {
+            document.getElementById("leadModal").style.display = "flex";
+        }
+
+        // Функция для закрытия модального окна
+        function closeModal() {
+            document.getElementById("leadModal").style.display = "none";
+        }
+
+        // Закрытие модального окна при клике вне формы
+        window.onclick = function(event) {
+            var modal = document.getElementById("leadModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
